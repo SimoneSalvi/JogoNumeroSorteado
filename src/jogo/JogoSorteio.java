@@ -13,7 +13,10 @@ import java.util.Scanner;
 public class JogoSorteio {
 
 	public static void main(String[] args) {
-		
+		JogoSorteio jogo = new JogoSorteio();
+		jogo.jogo();
+	}
+    public void jogo() {
         //instância um objeto da classe Random usando o construtor padrão
         Random gerador = new Random();
         Scanner leia = new Scanner(System.in);
@@ -41,5 +44,6 @@ public class JogoSorteio {
         }
         System.out.println("Parabéns, você acertou o número sorteado em " + cont + " tentativas!!");
     }
-	}
+
+    }
 }
