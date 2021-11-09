@@ -20,11 +20,8 @@ public class JogoSorteio {
         //instância um objeto da classe Random usando o construtor padrão
         Random gerador = new Random();
         Scanner leia = new Scanner(System.in);
-		
-
-    //um número inteiro aleatório de 1 a 50
-    for (int i = 1; i <= 1; i++) {
-        int numeroSorteado=gerador.nextInt(51);
+	    
+        int numeroSorteado=gerador.nextInt(50)+1; //um número inteiro aleatório de 1 a 50
         
         System.out.println("Bem vindo ao Jogo Número da Sorte! \n"
         		+ "Neste jogo você deve adivinhar o valor de um número aleatório de 1 a 50. \n"
@@ -46,4 +43,4 @@ public class JogoSorteio {
     }
 
     }
-}
+
